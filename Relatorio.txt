@@ -1,0 +1,12 @@
+Relatório - Exercício: Processador de Documentos
+
+Objetivo: O objetivo deste exercício foi criar um sistema para processamento de documentos utilizando o conceito de polimorfismo e sobrescrita de métodos. O sistema foi estruturado com uma classe base Documento e três classes derivadas: DocumentoTexto, DocumentoHTML e DocumentoPDF.
+
+Abordagem: 
+1. A classe Documento foi criada como base com propriedades para título, autor e data de criação. Também foram criados os métodos virtuais Imprimir() e ConteudoFormatado() que foram sobrescritos nas classes derivadas.
+2. Para cada tipo de documento, um comportamento específico foi implementado, como o método ContarPalavras() para DocumentoTexto, AdicionarEstilo() para DocumentoHTML e AdicionarMarcaDagua() para DocumentoPDF.
+3. A classe ProcessadorDocumentos foi criada para processar uma lista de documentos e demonstrar o polimorfismo ao chamar o método Imprimir() de diferentes tipos de documentos armazenados em uma lista de Documento.
+
+Desafios: Nenhum grande desafio foi encontrado, mas foi importante entender como o polimorfismo facilita o trabalho com diferentes tipos de objetos, mantendo a flexibilidade e evitando duplicação de código.
+
+Comentários sobre Polimorfismo: O polimorfismo é demonstrado aqui ao permitir que o método Imprimir() seja chamado de forma genérica em diferentes tipos de documentos. Isso permite que o sistema seja facilmente estendido, caso novos tipos de documentos sejam necessários no futuro, sem precisar modificar o código existente.
